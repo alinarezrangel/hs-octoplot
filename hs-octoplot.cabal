@@ -53,6 +53,15 @@ extra-source-files:  README.md, docs/getting-started.md, COPYING.LESSER
 -- Constraint on the version of Cabal needed to build this package.
 cabal-version:       >=1.10
 
+source-repository this
+  type:        git
+  location:    git@github.com/alinarezrangel/hs-octoplot.git
+  tag:         1.0
+
+source-repository head
+  type:        git
+  location:    git@github.com/alinarezrangel/hs-octoplot.git
+
 
 library
   -- Modules exported by the library.
