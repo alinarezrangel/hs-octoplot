@@ -232,7 +232,7 @@ scale pm rt@(nwX :/ nwY) = PointMap { points = nwm
 
 -- | Any real number that can be used in plotting functions.
 -- Basicly, any real number that can be converted to a float.
-class (RealFloat a, Enum a) => Plotable a where
+class (RealFloat a, Enum a, Show a) => Plotable a where
     toFloat :: a -> Float
     fromFloat :: Float -> a
 

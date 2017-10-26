@@ -28,7 +28,9 @@
 module Graphics.Rendering.OctoPlot
 ( module Graphics.Rendering.OctoPlot.Base
 , module Graphics.Rendering.OctoPlot.Gloss
+, module Graphics.Rendering.OctoPlot.EasyPlot
 ) where
 
 import Graphics.Rendering.OctoPlot.Base
-import Graphics.Rendering.OctoPlot.Gloss
+import Graphics.Rendering.OctoPlot.Gloss (scatter, scatterN, simulate)
+import Graphics.Rendering.OctoPlot.EasyPlot (plot, plotN)

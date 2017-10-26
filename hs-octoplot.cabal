@@ -17,11 +17,8 @@ synopsis:            Easy and simple plotting library.
 
 -- A longer description of the package.
 description:         Very simple use: just call the plot or scatter family of
-                     functions. All rendering is done by the Gloss library (see
-                     the gloss package).
-                     .
-                     Also, this library includes support for animated
-                     simulations.
+                     functions. This package provides the __same__ interface
+                     for the backends Gloss and EasyPlot.
 
 -- URL for the project homepage or repository.
 homepage:            https://hs-octoplot.sourceforge.io/
@@ -62,15 +59,15 @@ source-repository head
   type:        git
   location:    git@github.com/alinarezrangel/hs-octoplot.git
 
-
 library
   -- Modules exported by the library.
   exposed-modules:     Graphics.Rendering.OctoPlot,
                        Graphics.Rendering.OctoPlot.Base,
                        Graphics.Rendering.OctoPlot.Gloss,
                        Graphics.Rendering.OctoPlot.Gloss.WinUtils,
-                       Graphics.Rendering.OctoPlot.Gloss.LinePlot2D
-                       Graphics.Rendering.OctoPlot.Gloss.Simulation
+                       Graphics.Rendering.OctoPlot.Gloss.LinePlot2D,
+                       Graphics.Rendering.OctoPlot.Gloss.Simulation,
+                       Graphics.Rendering.OctoPlot.EasyPlot
   
   -- Modules included in this library but not exported.
   other-modules:       
@@ -80,7 +77,8 @@ library
   
   -- Other library packages from which modules are imported.
   build-depends:       containers >=0.5 && <0.6, gloss >=1.11 && <1.12,
-                       gloss-raster >=1.11 && <1.12, base >=4.8 && <4.9
+                       gloss-raster >=1.11 && <1.12, easyplot >=1.0 && <1.1,
+                       base >=4.8 && <4.9
   
   -- Directories containing source files.
   hs-source-dirs:      src
