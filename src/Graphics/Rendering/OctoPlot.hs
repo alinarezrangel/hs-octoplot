@@ -32,5 +32,11 @@ module Graphics.Rendering.OctoPlot
 ) where
 
 import Graphics.Rendering.OctoPlot.Base
-import Graphics.Rendering.OctoPlot.Gloss (scatter, scatterN, simulate)
+import Graphics.Rendering.OctoPlot.Gloss ( scatter
+                                         , scatterN
+                                         , simulate
+                                         , Picture(..)
+                                         , ModelTransitionFunction(..)
+                                         , DisplayModelFunction(..)
+                                         )
 import Graphics.Rendering.OctoPlot.EasyPlot (plot, plotN)
